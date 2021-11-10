@@ -45,8 +45,11 @@ Teachers profits are from 200 to 350.
 
 ```{r}
 moneysorted=sort(money)
+lci=moneysorted[26]
+uci=moneysorted[974]
 ```
 
+The 95% confidence interval for earnings is `r lci` to `r uci`
  
 Report git commit structure:
 There are 3 questions and there should be at least 3 separate commits, at least one dealing with each of the 3 questions.
@@ -60,7 +63,14 @@ The function will be given a class_size by number of students, odds, and Number_
 
 # In the class and payoff as described  If you highered 40 brownlow substitute teachers to do the same thing that Brownlow did then.
 ## what is their average earnings
+
+```{r}
+t.test(money)
+print(sd(money))
+```
+
 ## the standard deviation and a 95% confidence interval for their earnings?
+The standard deviation is 30.0029 
   
 <!--Explain and display your method of coming up with a 95% confidence interval of  professor Brownlows winnings (or losings)-->
 
