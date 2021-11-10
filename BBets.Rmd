@@ -1,6 +1,6 @@
 ---
 title: "Brownlows Bets"
-author: "Your Name Goes Here"
+author: "Irene"
 output: 
   html_document:
     number_sections: true
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 require(tidyverse)
 require(tigerstats)
 require(knitr)
-source(file="BrLw.R")
+source(file="payoffFunction-2 (2).R")
 ```
 
 
