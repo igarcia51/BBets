@@ -31,12 +31,22 @@ source(file="payoffFunction-2 (2).R")
  
  
 ```{r}
-money=vector("float")
-for(i in c(1:40)){
+money=vector("numeric",0)
+for(i in c(1:1000)){
   money[i]=(profit(35,2,637))
 }
 ```
  
+```{r}
+hist(money)
+```
+
+Teachers profits are from 200 to 350.
+
+```{r}
+moneysorted=sort(money)
+```
+
  
 Report git commit structure:
 There are 3 questions and there should be at least 3 separate commits, at least one dealing with each of the 3 questions.
